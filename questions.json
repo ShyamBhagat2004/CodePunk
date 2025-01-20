@@ -1,0 +1,580 @@
+[
+  {
+    "question_text": "Which data structure is most efficient for implementing a LIFO (Last-In-First-Out) stack?",
+    "options": {
+      "A": "Queue",
+      "B": "Linked List",
+      "C": "Array",
+      "D": "Stack"
+    },
+    "correct_option": "D",
+    "difficulty": "easy",
+    "tags": "stack,data-structure,lifo"
+  },
+  {
+    "question_text": "What is the average-case time complexity of searching for an element in a hash table?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "correct_option": "A",
+    "difficulty": "easy",
+    "tags": "hash-table,searching,time-complexity"
+  },
+  {
+    "question_text": "In the Two Sum problem, which data structure should be used to achieve O(n) time complexity?",
+    "options": {
+      "A": "Array",
+      "B": "Stack",
+      "C": "Queue",
+      "D": "Hash Map"
+    },
+    "correct_option": "D",
+    "difficulty": "easy",
+    "tags": "array,hash-table,two-pointers"
+  },
+  {
+    "question_text": "Which algorithm is best suited for finding the shortest path in an unweighted graph?",
+    "options": {
+      "A": "Dijkstra's Algorithm",
+      "B": "Depth-First Search (DFS)",
+      "C": "Breadth-First Search (BFS)",
+      "D": "A* Search Algorithm"
+    },
+    "correct_option": "C",
+    "difficulty": "medium",
+    "tags": "graph,breadth-first-search,shortest-path"
+  },
+  {
+    "question_text": "What is the time complexity of accessing an element in a balanced binary search tree (e.g., AVL Tree)?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "correct_option": "B",
+    "difficulty": "easy",
+    "tags": "tree,binary-search-tree,data-structure"
+  },
+  {
+    "question_text": "Which dynamic programming approach is used to solve the Knapsack problem?",
+    "options": {
+      "A": "Top-Down (Memoization)",
+      "B": "Bottom-Up (Tabulation)",
+      "C": "Both Top-Down and Bottom-Up",
+      "D": "Greedy Approach"
+    },
+    "correct_option": "C",
+    "difficulty": "hard",
+    "tags": "dynamic-programming,knapsack,optimization"
+  },
+  {
+    "question_text": "What is the primary advantage of using a Trie data structure?",
+    "options": {
+      "A": "Efficiently stores keys with shared prefixes",
+      "B": "Provides constant-time lookups",
+      "C": "Minimizes memory usage for large datasets",
+      "D": "Simplifies implementation of hash functions"
+    },
+    "correct_option": "A",
+    "difficulty": "medium",
+    "tags": "trie,string,data-structure"
+  },
+  {
+    "question_text": "Which sorting algorithm has the best average-case time complexity?",
+    "options": {
+      "A": "Bubble Sort",
+      "B": "Quick Sort",
+      "C": "Insertion Sort",
+      "D": "Selection Sort"
+    },
+    "correct_option": "B",
+    "difficulty": "easy",
+    "tags": "sorting,algorithm,divide-and-conquer"
+  },
+  {
+    "question_text": "In a Directed Acyclic Graph (DAG), which algorithm is used to perform a topological sort?",
+    "options": {
+      "A": "Kahn's Algorithm",
+      "B": "Prim's Algorithm",
+      "C": "Kruskal's Algorithm",
+      "D": "Floyd-Warshall Algorithm"
+    },
+    "correct_option": "A",
+    "difficulty": "medium",
+    "tags": "graph,topological-sort,algorithm"
+  },
+  {
+    "question_text": "Which of the following is a characteristic of a balanced binary search tree?",
+    "options": {
+      "A": "All leaf nodes are at the same depth",
+      "B": "The height difference between left and right subtrees is at most one for every node",
+      "C": "It allows duplicate elements",
+      "D": "It uses a hash function for node placement"
+    },
+    "correct_option": "B",
+    "difficulty": "medium",
+    "tags": "tree,binary-search-tree,data-structure"
+  },
+  {
+    "question_text": "What is the main idea behind the Divide and Conquer algorithm paradigm?",
+    "options": {
+      "A": "Solving a problem by finding the optimal substructure",
+      "B": "Breaking the problem into smaller subproblems, solving them independently, and combining their solutions",
+      "C": "Using dynamic programming to store intermediate results",
+      "D": "Iteratively improving the solution by making the best local choice at each step"
+    },
+    "correct_option": "B",
+    "difficulty": "easy",
+    "tags": "algorithm,divide-and-conquer,problem-solving"
+  },
+  {
+    "question_text": "Which data structure is ideal for implementing a priority queue?",
+    "options": {
+      "A": "Array",
+      "B": "Linked List",
+      "C": "Heap",
+      "D": "Hash Map"
+    },
+    "correct_option": "C",
+    "difficulty": "medium",
+    "tags": "heap,priority-queue,data-structure"
+  },
+  {
+    "question_text": "What is the time complexity of inserting an element into a balanced binary search tree?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "correct_option": "B",
+    "difficulty": "easy",
+    "tags": "tree,binary-search-tree,insert"
+  },
+  {
+    "question_text": "Which graph traversal algorithm uses a queue data structure?",
+    "options": {
+      "A": "Depth-First Search (DFS)",
+      "B": "Breadth-First Search (BFS)",
+      "C": "Dijkstra's Algorithm",
+      "D": "Prim's Algorithm"
+    },
+    "correct_option": "B",
+    "difficulty": "easy",
+    "tags": "graph,breadth-first-search,traversal"
+  },
+  {
+    "question_text": "In dynamic programming, what is the purpose of memoization?",
+    "options": {
+      "A": "To break the problem into smaller subproblems",
+      "B": "To store the results of expensive function calls and reuse them when the same inputs occur again",
+      "C": "To sort the input data",
+      "D": "To iterate through data structures efficiently"
+    },
+    "correct_option": "B",
+    "difficulty": "medium",
+    "tags": "dynamic-programming,memoization,optimization"
+  },
+  {
+    "question_text": "Which algorithm is primarily used for finding the minimum spanning tree of a graph?",
+    "options": {
+      "A": "Dijkstra's Algorithm",
+      "B": "Kruskal's Algorithm",
+      "C": "Breadth-First Search (BFS)",
+      "D": "Depth-First Search (DFS)"
+    },
+    "correct_option": "B",
+    "difficulty": "medium",
+    "tags": "graph,minimum-spanning-tree,algorithm"
+  },
+  {
+    "question_text": "What is the space complexity of the recursive implementation of the Fibonacci sequence?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(n)",
+      "C": "O(n^2)",
+      "D": "O(2^n)"
+    },
+    "correct_option": "D",
+    "difficulty": "hard",
+    "tags": "recursion,fibonacci,space-complexity"
+  },
+  {
+    "question_text": "Which data structure allows for O(1) time complexity for both insertion and deletion operations?",
+    "options": {
+      "A": "Stack",
+      "B": "Queue",
+      "C": "Hash Table",
+      "D": "Heap"
+    },
+    "correct_option": "C",
+    "difficulty": "medium",
+    "tags": "hash-table,insert,delete,time-complexity"
+  },
+  {
+    "question_text": "What is the primary difference between a Binary Search Tree (BST) and a Binary Heap?",
+    "options": {
+      "A": "BST maintains a specific order among nodes, while Binary Heap does not",
+      "B": "Binary Heap allows duplicate elements, while BST does not",
+      "C": "BST is a complete binary tree, while Binary Heap is not",
+      "D": "There is no difference"
+    },
+    "correct_option": "A",
+    "difficulty": "medium",
+    "tags": "tree,binary-search-tree,binary-heap,comparison"
+  },
+  {
+    "question_text": "Which sorting algorithm is considered the most efficient for large datasets in practice?",
+    "options": {
+      "A": "Bubble Sort",
+      "B": "Quick Sort",
+      "C": "Insertion Sort",
+      "D": "Selection Sort"
+    },
+    "correct_option": "B",
+    "difficulty": "medium",
+    "tags": "sorting,algorithm,quick-sort"
+  },
+  {
+    "question_text": "In graph theory, what does it mean for a graph to be 'connected'?",
+    "options": {
+      "A": "All nodes have the same degree",
+      "B": "There is a path between every pair of nodes",
+      "C": "The graph contains at least one cycle",
+      "D": "The graph is undirected"
+    },
+    "correct_option": "B",
+    "difficulty": "easy",
+    "tags": "graph,connected,definition"
+  },
+  {
+    "question_text": "What is the time complexity of the Merge Sort algorithm?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(log n)"
+    },
+    "correct_option": "B",
+    "difficulty": "easy",
+    "tags": "sorting,merge-sort,time-complexity"
+  },
+  {
+    "question_text": "Which algorithm is used to detect cycles in a directed graph?",
+    "options": {
+      "A": "Breadth-First Search (BFS)",
+      "B": "Depth-First Search (DFS)",
+      "C": "Dijkstra's Algorithm",
+      "D": "Floyd-Warshall Algorithm"
+    },
+    "correct_option": "B",
+    "difficulty": "medium",
+    "tags": "graph,cycle-detection,dfs"
+  },
+  {
+    "question_text": "In a graph represented by an adjacency list, what is the space complexity in terms of vertices (V) and edges (E)?",
+    "options": {
+      "A": "O(V^2)",
+      "B": "O(V + E)",
+      "C": "O(E)",
+      "D": "O(V)"
+    },
+    "correct_option": "B",
+    "difficulty": "hard",
+    "tags": "graph,adjacency-list,space-complexity"
+  },
+  {
+    "question_text": "Which data structure is best suited for implementing an undo feature in a text editor?",
+    "options": {
+      "A": "Queue",
+      "B": "Stack",
+      "C": "Hash Table",
+      "D": "Linked List"
+    },
+    "correct_option": "B",
+    "difficulty": "medium",
+    "tags": "stack,application,undo-feature"
+  },
+  {
+    "question_text": "What is the worst-case time complexity of Quick Sort?",
+    "options": {
+      "A": "O(n)",
+      "B": "O(n log n)",
+      "C": "O(n^2)",
+      "D": "O(log n)"
+    },
+    "correct_option": "C",
+    "difficulty": "medium",
+    "tags": "sorting,quick-sort,time-complexity"
+  },
+  {
+    "question_text": "Which of the following problems is best solved using dynamic programming?",
+    "options": {
+      "A": "Finding the shortest path in a graph",
+      "B": "Finding the maximum subarray sum",
+      "C": "Sorting an array",
+      "D": "Detecting a cycle in a graph"
+    },
+    "correct_option": "B",
+    "difficulty": "medium",
+    "tags": "dynamic-programming,maximum-subarray,problem-solving"
+  },
+  {
+    "question_text": "What is the primary purpose of a sentinel node in a linked list?",
+    "options": {
+      "A": "To store the head of the list",
+      "B": "To simplify insertion and deletion operations",
+      "C": "To indicate the end of the list",
+      "D": "To store additional data"
+    },
+    "correct_option": "B",
+    "difficulty": "hard",
+    "tags": "linked-list,sentinel-node,optimization"
+  },
+  {
+    "question_text": "Which algorithmic paradigm does the Fibonacci sequence problem primarily utilize?",
+    "options": {
+      "A": "Divide and Conquer",
+      "B": "Greedy",
+      "C": "Dynamic Programming",
+      "D": "Backtracking"
+    },
+    "correct_option": "C",
+    "difficulty": "easy",
+    "tags": "dynamic-programming,fibonacci,algorithmic-paradigm"
+  },
+  {
+    "question_text": "In a binary heap, where is the minimum element located?",
+    "options": {
+      "A": "At the root",
+      "B": "At the leftmost leaf",
+      "C": "At the rightmost leaf",
+      "D": "Distributed randomly"
+    },
+    "correct_option": "A",
+    "difficulty": "easy",
+    "tags": "heap,binary-heap,min-element"
+  },
+  {
+    "question_text": "What is the time complexity of inserting an element into a hash table?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "correct_option": "A",
+    "difficulty": "easy",
+    "tags": "hash-table,insert,time-complexity"
+  },
+  {
+    "question_text": "Which traversal method is used to serialize and deserialize a binary search tree efficiently?",
+    "options": {
+      "A": "In-order Traversal",
+      "B": "Pre-order Traversal",
+      "C": "Post-order Traversal",
+      "D": "Level-order Traversal"
+    },
+    "correct_option": "B",
+    "difficulty": "hard",
+    "tags": "tree,serialization,pre-order-traversal"
+  },
+  {
+    "question_text": "Which algorithm is used for topological sorting in a graph?",
+    "options": {
+      "A": "Dijkstra's Algorithm",
+      "B": "Kruskal's Algorithm",
+      "C": "Kahn's Algorithm",
+      "D": "Floyd-Warshall Algorithm"
+    },
+    "correct_option": "C",
+    "difficulty": "medium",
+    "tags": "graph,topological-sort,kahn's-algorithm"
+  },
+  {
+    "question_text": "What is the primary advantage of using a doubly linked list over a singly linked list?",
+    "options": {
+      "A": "Uses less memory",
+      "B": "Simpler to implement",
+      "C": "Allows traversal in both directions",
+      "D": "Faster access to elements"
+    },
+    "correct_option": "C",
+    "difficulty": "easy",
+    "tags": "linked-list,doubly-linked-list,advantages"
+  },
+  {
+    "question_text": "Which data structure is optimal for implementing a FIFO (First-In-First-Out) queue?",
+    "options": {
+      "A": "Stack",
+      "B": "Linked List",
+      "C": "Heap",
+      "D": "Hash Table"
+    },
+    "correct_option": "B",
+    "difficulty": "easy",
+    "tags": "queue,data-structure,fifo"
+  },
+  {
+    "question_text": "In dynamic programming, what is 'overlapping subproblems'?",
+    "options": {
+      "A": "Subproblems that share subsubproblems",
+      "B": "Subproblems that are identical",
+      "C": "Subproblems that do not share any subsubproblems",
+      "D": "Subproblems that have different solutions"
+    },
+    "correct_option": "A",
+    "difficulty": "hard",
+    "tags": "dynamic-programming,overlapping-subproblems,concepts"
+  },
+  {
+    "question_text": "Which algorithm is used to find the strongly connected components in a directed graph?",
+    "options": {
+      "A": "Kruskal's Algorithm",
+      "B": "Tarjan's Algorithm",
+      "C": "Prim's Algorithm",
+      "D": "Dijkstra's Algorithm"
+    },
+    "correct_option": "B",
+    "difficulty": "hard",
+    "tags": "graph,strongly-connected-components,tarjan's-algorithm"
+  },
+  {
+    "question_text": "What is the time complexity of accessing the middle element of a singly linked list?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "correct_option": "C",
+    "difficulty": "easy",
+    "tags": "linked-list,time-complexity,access"
+  },
+  {
+    "question_text": "Which algorithmic strategy is primarily used in Prim's and Kruskal's algorithms?",
+    "options": {
+      "A": "Dynamic Programming",
+      "B": "Greedy",
+      "C": "Divide and Conquer",
+      "D": "Backtracking"
+    },
+    "correct_option": "B",
+    "difficulty": "medium",
+    "tags": "algorithmic-strategy,prim's-algorithm,kruskal's-algorithm,greedy"
+  },
+  {
+    "question_text": "What is the space complexity of Breadth-First Search (BFS) on a graph?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(V)",
+      "C": "O(E)",
+      "D": "O(V + E)"
+    },
+    "correct_option": "D",
+    "difficulty": "medium",
+    "tags": "graph,breadth-first-search,bfs,space-complexity"
+  },
+  {
+    "question_text": "Which data structure is commonly used to implement recursive algorithms iteratively?",
+    "options": {
+      "A": "Queue",
+      "B": "Stack",
+      "C": "Heap",
+      "D": "Hash Table"
+    },
+    "correct_option": "B",
+    "difficulty": "easy",
+    "tags": "recursion,stack,iterative-algorithm"
+  },
+  {
+    "question_text": "In dynamic programming, what does 'optimal substructure' refer to?",
+    "options": {
+      "A": "The ability to break a problem into independent subproblems",
+      "B": "The property that an optimal solution can be constructed from optimal solutions of its subproblems",
+      "C": "Subproblems that overlap",
+      "D": "The existence of multiple optimal solutions"
+    },
+    "correct_option": "B",
+    "difficulty": "medium",
+    "tags": "dynamic-programming,optimal-substructure,concepts"
+  },
+  {
+    "question_text": "Which traversal method visits nodes in the order: root, left subtree, right subtree?",
+    "options": {
+      "A": "In-order Traversal",
+      "B": "Pre-order Traversal",
+      "C": "Post-order Traversal",
+      "D": "Level-order Traversal"
+    },
+    "correct_option": "B",
+    "difficulty": "easy",
+    "tags": "tree,pre-order-traversal,traversal-method"
+  },
+  {
+    "question_text": "What is the primary use of a priority queue in algorithms?",
+    "options": {
+      "A": "To store elements in a first-in-first-out manner",
+      "B": "To store elements in a last-in-first-out manner",
+      "C": "To retrieve elements based on their priority",
+      "D": "To perform constant-time lookups"
+    },
+    "correct_option": "C",
+    "difficulty": "easy",
+    "tags": "priority-queue,data-structure,application"
+  },
+  {
+    "question_text": "Which algorithm is used to find the minimum number of coins required to make a certain amount of change?",
+    "options": {
+      "A": "Depth-First Search (DFS)",
+      "B": "Breadth-First Search (BFS)",
+      "C": "Dynamic Programming",
+      "D": "Greedy Algorithm"
+    },
+    "correct_option": "C",
+    "difficulty": "medium",
+    "tags": "dynamic-programming,coin-change,algorithm"
+  },
+  {
+    "question_text": "What is the primary difference between BFS and DFS in graph traversal?",
+    "options": {
+      "A": "BFS uses a stack, while DFS uses a queue",
+      "B": "BFS explores neighbors level by level, while DFS explores as far as possible along each branch",
+      "C": "BFS is used for trees, while DFS is used for graphs",
+      "D": "There is no difference"
+    },
+    "correct_option": "B",
+    "difficulty": "easy",
+    "tags": "graph,traversal,bfs,dfs"
+  },
+  {
+    "question_text": "Which data structure is best suited for implementing a memoization cache?",
+    "options": {
+      "A": "Array",
+      "B": "Linked List",
+      "C": "Hash Map",
+      "D": "Stack"
+    },
+    "correct_option": "C",
+    "difficulty": "medium",
+    "tags": "memoization,hash-map,data-structure"
+  },
+ 
+  {
+    "question_text": "What is the time complexity of inserting an element into a balanced binary search tree?",
+    "options": {
+      "A": "O(1)",
+      "B": "O(log n)",
+      "C": "O(n)",
+      "D": "O(n log n)"
+    },
+    "correct_option": "B",
+    "difficulty": "easy",
+    "tags": "tree,binary-search-tree,insert,time-complexity"
+  }
+]
+
