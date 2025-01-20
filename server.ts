@@ -7,7 +7,7 @@ import cors from 'cors';
 
 // Initialize Express App
 const app = express();
-const PORT: number = Number(process.env.PORT) || 5000;
+const PORT: number = Number(process.env.PORT) || 5001;
 
 // Middleware
 app.use(express.json());
