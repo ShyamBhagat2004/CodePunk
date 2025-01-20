@@ -1,9 +1,13 @@
-// server.ts
+// src/server.ts
 
 import express, { Request, Response } from 'express';
 import sqlite3 from 'sqlite3';
 import path from 'path';
 import cors from 'cors';
+import dotenv from 'dotenv';
+
+// Load environment variables from .env file if present
+dotenv.config();
 
 // Initialize Express App
 const app = express();
@@ -13,8 +17,18 @@ const PORT: number = Number(process.env.PORT) || 5000;
 app.use(express.json());
 app.use(cors());
 
-// Serve static files from the current directory
-app.use(express.static(path.join(__dirname, '../')));
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, '/public')));
+
+// Explicit route for '/'
+app.get('/', (req: Request, res: Response) => {
+  res.sendFile(path.join(__dirname, '/public/index.html'), (err) => {
+    if (err) {
+      console.error('Error sending index.html:', err);
+      res.status(500).send('Internal Server Error');
+    }
+  });
+});
 
 // Initialize SQLite Database
 const dbPath = path.join(__dirname, 'codepunk.db');
@@ -75,10 +89,8 @@ app.post('/api/questions/:id/answer', (req: Request, res: Response) => {
   const { id } = req.params;
   const { selected_option } = req.body;
 
-  if (
-    !selected_option ||
-    !['A', 'B', 'C', 'D'].includes(selected_option.toUpperCase())
-  ) {
+  // Validate the selected_option
+  if (!selected_option || !['A', 'B', 'C', 'D'].includes(selected_option.toUpperCase())) {
     return res.status(400).json({ message: 'Invalid selected_option.' });
   }
 

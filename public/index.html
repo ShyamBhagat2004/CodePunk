@@ -1,0 +1,55 @@
+<!-- public/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CodePunk Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CodePunk Quiz</h1>
+    
+    <!-- Quiz Settings -->
+    <div class="settings">
+      <label for="difficulty">Select Difficulty:</label>
+      <select id="difficulty">
+        <option value="">Any</option>
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="start-quiz">Start Quiz</button>
+    </div>
+
+    <!-- Question Container -->
+    <div id="question-container">
+      <p id="question-text">Select difficulty and click "Start Quiz" to begin.</p>
+      <form id="options-form" style="display: none;">
+        <label>
+          <input type="radio" name="option" value="A" required>
+          <span id="option-A">Option A</span>
+        </label><br>
+        <label>
+          <input type="radio" name="option" value="B">
+          <span id="option-B">Option B</span>
+        </label><br>
+        <label>
+          <input type="radio" name="option" value="C">
+          <span id="option-C">Option C</span>
+        </label><br>
+        <label>
+          <input type="radio" name="option" value="D">
+          <span id="option-D">Option D</span>
+        </label><br><br>
+        <button type="submit">Submit Answer</button>
+      </form>
+      <div id="result"></div>
+      <button id="next-question" style="display: none;">Next Question</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
