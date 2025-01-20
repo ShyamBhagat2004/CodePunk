@@ -1,0 +1,23 @@
+{
+  "name": "codepunk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShyamBhagat2004/CodePunk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShyamBhagat2004/CodePunk/issues"
+  },
+  "homepage": "https://github.com/ShyamBhagat2004/CodePunk#readme",
+  "description": "",
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}
