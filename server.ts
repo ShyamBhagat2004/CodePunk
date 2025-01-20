@@ -5,7 +5,7 @@ import path from 'path';
 const app = express();
 const db = new Database('codepunk.db');
 
-// Define a TypeScript interface for a single question row
+// Define a TypeScript interface for the questions
 interface Question {
     id: number;
     question_text: string;
@@ -47,7 +47,31 @@ app.get('/questions', (req, res) => {
     });
 });
 
-// Serve the index.html file
+// Endpoint to check answers
+app.post('/submit', (req, res) => {
+    const userAnswers = req.body; // Expecting an array: [{ id, selectedOption }]
+    db.all('SELECT * FROM questions', (err, rows: Question[]) => {
+        if (err) {
+            console.error('Error fetching questions:', err.message);
+            res.status(500).send('Internal Server Error');
+        } else {
+            let correctCount = 0;
+
+            // Validate each answer
+            userAnswers.forEach((answer: { id: number; selectedOption: string; }) => {
+                const question = rows.find((q) => q.id === answer.id);
+                if (question && question.correct_option === answer.selectedOption) {
+                    correctCount++;
+                }
+            });
+
+            // Send response back to the client
+            res.json({ correctCount, totalCount: rows.length });
+        }
+    });
+});
+
+// Serve index.html as a fallback for any unmatched routes
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/index.html'));
 });
