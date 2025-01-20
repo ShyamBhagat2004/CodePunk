@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                          
+    "module": "commonjs",                     
+    "outDir": "./dist",                       
+    "rootDir": "/",                          
+    "strict": true,                           
+    "esModuleInterop": true,                  
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true                      
+  },
+  "include": ["server.ts", "populate_db.ts"],
+  "exclude": ["node_modules"]
+}
