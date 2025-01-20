@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz Application</h1>
+    </header>
+    <main>
+        <div id="quiz-container"></div>
+        <button id="submit-btn">Submit Answers</button>
+        <div id="result"></div>
+    </main>
+    <script>
+        async function fetchQuestions() {
+            const response = await fetch('/questions');
+            const questions = await response.json();
+            const container = document.getElementById('quiz-container');
+
+            questions.forEach((question, index) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.className = 'question';
+
+                questionDiv.innerHTML = `
+                    <h3>${index + 1}. ${question.question_text}</h3>
+                    ${Object.entries(question.options).map(([key, value]) => `
+                        <label>
+                            <input type="radio" name="q${index}" value="${key}">
+                            ${key}. ${value}
+                        </label>
+                        <br>
+                    `).join('')}
+                `;
+
+                container.appendChild(questionDiv);
+            });
+        }
+
+        document.getElementById('submit-btn').addEventListener('click', async () => {
+            const selectedAnswers = Array.from(document.querySelectorAll('input[type="radio"]:checked')).map(input => ({
+                questionIndex: input.name.replace('q', ''),
+                selectedOption: input.value,
+            }));
+
+            const response = await fetch('/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(selectedAnswers),
+            });
+
+            const result = await response.json();
+            document.getElementById('result').textContent = `You got ${result.correctCount} out of ${result.totalCount} correct!`;
+        });
+
+        fetchQuestions();
+    </script>
+</body>
+</html>

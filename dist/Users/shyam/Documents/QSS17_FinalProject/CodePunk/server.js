@@ -1,35 +1,24 @@
-import express from 'express';
-import { Database } from 'sqlite3';
-import path from 'path';
-
-const app = express();
-const db = new Database('codepunk.db');
-
-// Define a TypeScript interface for a single question row
-interface Question {
-    id: number;
-    question_text: string;
-    option_a: string;
-    option_b: string;
-    option_c: string;
-    option_d: string;
-    correct_option: string;
-    difficulty: string;
-    tags: string;
-    created_at: string;
-}
-
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const sqlite3_1 = require("sqlite3");
+const path_1 = __importDefault(require("path"));
+const app = (0, express_1.default)();
+const db = new sqlite3_1.Database('codepunk.db');
 // Middleware to parse JSON and serve static files
-app.use(express.json());
-app.use(express.static(path.join(__dirname, '/public')));
-
+app.use(express_1.default.json());
+app.use(express_1.default.static(path_1.default.join(__dirname, '../public')));
 // Endpoint to fetch all questions
 app.get('/questions', (req, res) => {
-    db.all('SELECT * FROM questions', (err, rows: Question[]) => {
+    db.all('SELECT * FROM questions', (err, rows) => {
         if (err) {
             console.error('Error fetching questions:', err.message);
             res.status(500).send('Internal Server Error');
-        } else {
+        }
+        else {
             const questions = rows.map((row) => ({
                 id: row.id,
                 question_text: row.question_text,
@@ -46,12 +35,10 @@ app.get('/questions', (req, res) => {
         }
     });
 });
-
 // Serve the index.html file
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/index.html'));
+    res.sendFile(path_1.default.join(__dirname, '../public/index.html'));
 });
-
 // Start the server
 const PORT = 5001;
 app.listen(PORT, () => {
